@@ -1,23 +1,34 @@
 <div class="footer">
     <div>
         <p>
+<<<<<<< HEAD
             <a href="https://github.com/RoddBTH/PA1436-design" title="GitHub">My Github repo</a>
         </p>
     </div>
     <div class="social">
         <!-- Other social links generated from _meta data -->
+=======
+            En footer med lite text.
+        </p>
+    </div>
+    <div class="social">
+        <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
+>>>>>>> 3d13adb (test)
         {% for social in pages["_meta"].meta.social %}
         <a href="{{ social.url }}" title="{{ social.title }}" role="button">
             <i class="fa fa-{{ social.icon }}" aria-hidden="true"></i>
             <span class="sr-only">{{ social.title }}</span>
         </a>
         {% endfor %}
+<<<<<<< HEAD
 
         <!-- Hardcoded GitHub Link -->
         <a href="https://github.com/RoddBTH/PA1436-design" title="GitHub" role="button">
             <i class="fa fa-github" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span>
         </a>
+=======
+>>>>>>> 3d13adb (test)
     </div>
 </div>
 

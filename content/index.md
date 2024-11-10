@@ -3,6 +3,7 @@ Title: Home
 Description: This is our index page.
 ---
 
+<<<<<<< HEAD
 <div class="center-content">
     <h1> Home page </h1>
     <img src="image/lucas.jpg" alt="A photo of Lucas Huynh" width="300">
@@ -19,3 +20,11 @@ Description: This is our index page.
         På fritiden brukar jag ofta spela datorspel men även piano till viss del.
     </p>
 </div>
+=======
+Home page
+==========================
+
+The source for this page is in `content/index.md`.
+
+This is a sample home page written in markdown with some frontmatter defined.
+>>>>>>> 3d13adb (test)
