@@ -1,0 +1,93 @@
+/* Slide Transition */
+
+.slide {
+    overflow-y: hidden !important;
+    transition: height 0.5s ease-in-out !important;
+}
+
+/* Navigation Styles */
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5em 0;
+    list-style: none;
+    margin: 0;
+}
+
+.nav ul li {
+    padding: 0 1.5em;
+    font-weight: 500;
+}
+
+.nav a, .nav-toggle {
+    color: #6d4c41;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover, .nav-toggle:hover {
+    color: #3e2723;
+}
+
+/* Nav Toggle Button for Mobile */
+
+.nav-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #6d4c41;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5em;
+}
+
+/* Mobile Layout (Responsive) */
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding-bottom: 1em;
+        background-color: #fafafa; /* Background for mobile navigation */
+        width: 100%;
+        margin-top: 1.5em;
+    }
+
+    .nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 1em 0;
+        font-size: 1.1rem;
+        color: #6d4c41;
+        border-top: 1px solid #eceff1; /* Subtle separation between links */
+    }
+
+    .nav ul li a:hover {
+        color: #3e2723;
+    }
+
+    .js .nav-toggle {
+        display: block;
+        width: 2em;
+        margin: 1em;
+        font-size: 2rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+        color: #6d4c41;
+    }
+
+    /* When navigation is active, show it */
+    .nav-active .nav ul {
+        display: block;
+    }
+}
