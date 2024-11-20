@@ -8,6 +8,6 @@ Social:
 
 Social:
   - title: Link to my github repo
-    url: https://github.com/RoddBTH/PA1436-design
+    url: https://github.com/RoddBTH/design-bth
     icon: github
 ---
