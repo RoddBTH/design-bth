@@ -11,15 +11,7 @@ timezone: ~                         # Your PHP installation might require you to
 ##
 # Theme
 #
-<<<<<<< HEAD
-<<<<<<< HEAD
-theme: rodd                         # The name of your custom theme
-=======
-theme: example                      # The name of your custom theme
->>>>>>> 3d13adb (test)
-=======
 theme: kmom02                       # The name of your custom theme
->>>>>>> 4119750 (2.0.*)
 themes_url: ~                       # Pico will try to guess the URL to the themes dir of your installation;
                                     #     If this fails, override it here. Example: https://example.com/pico/themes/
 theme_config:                       # Additional theme-specific config
