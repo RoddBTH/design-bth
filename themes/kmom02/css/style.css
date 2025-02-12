@@ -6696,10 +6696,50 @@ li {
 
 .landing-page {
   display: grid;
-  gap: 1.96rem 1.96rem;
+  gap: 1.96rem;
+  margin-bottom: 1.96rem;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .landing-page h1 {
-  grid-column: span 3;
   justify-self: center;
+}
+
+@media (min-width: 767px) {
+  .landing-page {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .col-span-2 {
+    grid-column: span 2;
+  }
+  .col-span-3 {
+    grid-column: span 3;
+  }
+  .landing-page h1 {
+    grid-column: span 3;
+  }
+  .technology .menu {
+    display: block !important;
+  }
+}
+.box {
+  border: 1px solid #ccc;
+  padding: 1.96rem;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.technology {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: start;
+}
+
+.technology .menu {
+  display: none;
+  flex: 0;
+  margin-left: 16px;
 }

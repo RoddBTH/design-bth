@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-  color: #2e2e2e;
   background-color: #fafafa;
   line-height: 1.6;
 }
@@ -31,6 +30,7 @@ body {
 .main {
   flex: 1;
   padding: 2em 0;
+  background-color: $main-background-color;
 }
 
 /* Header */
@@ -102,7 +102,7 @@ h4,
 h5,
 h6 {
   font-family: 'Lora', serif;
-  color: #3e2723;
+  color: $header-font-color;
   margin-bottom: 0.8em;
 }
 
@@ -131,7 +131,6 @@ p,
 li {
   font-size: 1rem;
   margin-bottom: 1em;
-  color: #000;
 }
 
 a {
